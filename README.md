@@ -7,3 +7,24 @@ However, now I don't have as many resources for deck building as I normally do. 
 Most likely, nobody else on the planet will ever use this. But I successfully procrastinated cleaning the house and did this instead. 
 
 To use this, download the [all-cards scryfall bulk data](https://scryfall.com/docs/api/bulk-data) and create an `secret_constants.py` file with a gemini key `gemini_key` in it. 
+
+What it looks like:
+
+It gives output that looks a lil smthn like this.
+
+- SYNERGY is how confident Gemini is that the two cards vibe withe ach other
+- CARDS are the two cards that ahave chemistry
+- ANIMALS are the legal IRL creature types between the two commanders
+- COLORS are the combined color identities of the commanders
+- ANIMAL POOL is how many unique creatures that share a color and creature type with a commander. So, the max # of legal creatures for that deck
+
+<table>
+<thead>
+<tr><th style="text-align: right;">  Synergy</th><th>Cards                                                    </th><th>Animals                 </th><th>Colors              </th><th>Card 1 Link                                                                                           </th><th>Card 2 Link                                                                                          </th><th>Animal Pool                           </th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: right;">       95</td><td>Snapdax, Apex of the Hunt & Nethroi, Apex of Death       </td><td>{'Cat'}                 </td><td>['G', 'R', 'B', 'W']</td><td><a href="https://scryfall.com/card/piko/209p/snapdax-apex-of-the-hunt?utm_source=api">CLICK_HERE</a>  </td><td><a href="https://scryfall.com/card/dmc/163/nethroi-apex-of-death?utm_source=api">CLICK_HERE</a>      </td><td>{'Cat': 325}                          </td></tr>
+<tr><td style="text-align: right;">       90</td><td>Greasefang, Okiba Boss & Calamity, Galloping Inferno     </td><td>{'Rat', 'Horse'}        </td><td>['B', 'W', 'R']     </td><td><a href="https://scryfall.com/card/neo/485/greasefang-okiba-boss?utm_source=api">CLICK_HERE</a>       </td><td><a href="https://scryfall.com/card/otj/330/calamity-galloping-inferno?utm_source=api">CLICK_HERE</a> </td><td>{'Rat': 83, 'Horse': 26}              </td></tr>
+<tr><td style="text-align: right;"></td></tr>
+</tbody>
+</table>
