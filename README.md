@@ -15,7 +15,7 @@ It gives output that looks a lil smthn like this.
 - SYNERGY is how confident Gemini is that the two cards vibe withe ach other
 - CARDS are the two cards that ahave chemistry
 - ANIMALS are the legal IRL creature types between the two commanders
-- COLORS are the combined color identities of the commanders
+- COLORS are the combined color identities of the commanders. [The codes are covered here](https://scryfall.com/docs/api/colors)
 - ANIMAL POOL is how many unique creatures that share a color and creature type with a commander. So, the max # of legal creatures for that deck
 
 <table>
